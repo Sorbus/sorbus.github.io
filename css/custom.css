@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,900');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,900');
+
+body {
+  background:#fcfcfc;
+  color:#444;
+  font-family:'Gentium Book Basic', serif;
+}
+
+.row {
+  padding-top:2em;
+}
+
+.row:first-of-type {
+  padding-top:10em;
+}
+
+.definition {
+  text-align:justify;
+}
+
+.links .column {
+  text-align:center;
+}
+
+.links a {
+  font-family:'Merriweather', normal;
+}
