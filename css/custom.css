@@ -11,10 +11,6 @@ body {
   padding-top:2em;
 }
 
-.row:first-of-type {
-  padding-top:10em;
-}
-
 .definition {
   text-align:justify;
 }
@@ -25,4 +21,22 @@ body {
 
 .links a {
   font-family:'Merriweather', normal;
+}
+
+@media only screen {
+  .row:first-of-type {
+    padding-top:0em;
+  }
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .row:first-of-type {
+    padding-top:5em;
+  }
+}
+
+@media only screen and (min-width: 64.0625em) {
+  .row:first-of-type {
+    padding-top:10em;
+  }
 }
