@@ -46,8 +46,8 @@ body {
     margin-bottom:2em;
   }
   
-  header .row:first-of-type {
-    padding-top:0em!important;
+  .tumblr .row:first-of-type {
+    padding-top:2em!important;
   }
 }
 
