@@ -7,12 +7,15 @@ body {
   font-family:'Gentium Book Basic', serif;
 }
 
-.row {
-  padding-top:2em;
-}
-
 .definition {
   text-align:justify;
+  border:1px solid #444;
+  padding:1em;
+  border-radius:1em;
+  background-color:#fff;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
 }
 
 .links .column {
@@ -21,15 +24,45 @@ body {
 
 .links a {
   font-family:'Merriweather', normal;
+  border: 1px #444 solid;
+  border-radius:100%;
+  display:inline-block;
+  width:5em;
+  font-size:1em;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+  -moz-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+  background-color:#fff;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+}
+
+.links a:hover {
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
+	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
+	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
 }
 
 @media only screen {
-  .row:first-of-type {
-    padding-top:0em;
+  .links .small-4 {
+    margin-bottom:2em;
   }
 }
 
 @media only screen and (min-width: 40.0625em) {
+  .links .small-4 {
+    margin-bottom:0em;
+  }
+
+  .row {
+    padding-top:2em;
+  }
+
   .row:first-of-type {
     padding-top:5em;
   }
@@ -39,4 +72,24 @@ body {
   .row:first-of-type {
     padding-top:10em;
   }
+}
+
+.email:hover {
+  color:#c9252c;
+  border: 1px solid #c9252c;
+}
+
+.github:hover {
+  color:black;
+  border: 1px solid black;
+}
+
+.twitter:hover {
+  color:#55acee;
+  border: 1px solid #55acee;
+}
+
+.tumblr:hover {
+  color:#35465c;
+  border: 1px solid #35465c;
 }
