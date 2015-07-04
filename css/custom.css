@@ -82,6 +82,10 @@ body {
     background-position: bottom right;
   }
   
+  .tumblr header {
+    margin-left:2em;
+  }
+  
   p {
     background-color:rgba(252, 252, 252, .7);
     -webkit-box-shadow: 0px 0px 20px 10px rgba(252, 252, 252, .7);
