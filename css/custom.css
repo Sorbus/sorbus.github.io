@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
   color:#222;
 }
 
+.post>p {
+  text-align:justify;
+}
+
 .definition {
   text-align:justify;
 }
@@ -99,12 +103,52 @@ h1, h2, h3, h4, h5, h6 {
     padding-top:0em;
   }
   
-  .tumblr .links .column{
-    margin-top:1em;
+  .tumblr .sidebar .column{
+    margin-top:1.5em;
+    text-align: center;
   }
   
-  .tumblr .links .column:first-of-type {
+  .tumblr .sidebar .column:first-of-type {
     margin-top:0em;
+  }
+  
+  .tumblr .sidebar a {
+    font-family: 'Merriweather', normal;
+    display: inline-block;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    transition: all .5s ease-in-out;
+  }
+  
+  .tumblr .sidebar .column:hover a:before  {
+    position: relative;
+  }
+  
+  .tumblr .sidebar a:before {
+    content: "\0025B6 ";
+    position: absolute;
+    left: 0em;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+  
+  .tumblr .sidebar .column:hover a:after  {
+    position: relative;
+  }
+  
+  .tumblr .sidebar a:after {
+    content: "\0025B6 ";
+    position: absolute;
+    left: 0em;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
   }
   
   p {
