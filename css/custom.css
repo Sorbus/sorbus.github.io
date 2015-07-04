@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top:2em;
   }
 
-  .row:first-of-type {
+  body>.row:first-of-type {
     padding-top:5em;
   }
   
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (min-width: 64.0625em) {
-  .row:first-of-type {
+  body>.row:first-of-type {
     padding-top:10em;
   }
 }
