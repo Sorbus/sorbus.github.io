@@ -46,13 +46,17 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
 }
 
+.tumblr>.row:first-of-type {
+  padding-top:2em!important;
+}
+
 @media only screen {
   .links .small-4 {
     margin-bottom:2em;
   }
   
   .tumblr>.row:first-of-type {
-    padding-top:2em!important;
+    padding-top:0em!important;
   }
 }
 
