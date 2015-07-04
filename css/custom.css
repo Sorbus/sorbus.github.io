@@ -46,17 +46,13 @@ h1, h2, h3, h4, h5, h6 {
 	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
 }
 
-.tumblr>.row:first-of-type {
-  padding-top:2em!important;
-}
-
 @media only screen {
   .links .small-4 {
     margin-bottom:2em;
   }
   
   .tumblr>.row:first-of-type {
-    padding-top:0em!important;
+    padding-top:0em;
   }
 }
 
@@ -71,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 
   body>.row:first-of-type {
     padding-top:5em;
+  }
+  
+  .tumblr>.row:first-of-type {
+    padding-top:2em!important;
   }
   
   #background {
@@ -93,6 +93,18 @@ h1, h2, h3, h4, h5, h6 {
   
   .tumblr header {
     margin-left:2em;
+  }
+  
+  .tumblr .row .row {
+    padding-top:0em;
+  }
+  
+  .tumblr .links .column{
+    margin-top:1em;
+  }
+  
+  .tumblr .links .column:first-of-type {
+    margin-top:0em;
   }
   
   p {
