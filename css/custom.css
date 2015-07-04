@@ -141,9 +141,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .tumblr .sidebar a:after {
-    content: "\0025B6";
+    content: "\0025C0";
     position: absolute;
-    left: 0em;
+    right: 0em;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
