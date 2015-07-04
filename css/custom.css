@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .tumblr .sidebar .column:hover a:before  {
-    position: relative;
+    left:2em;
   }
   
   .tumblr .sidebar a:before {
-    content: "\0025B6 ";
+    content: "\0025B6";
     position: absolute;
     left: 0em;
     -moz-transition: all .5s ease-in-out;
@@ -137,11 +137,11 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .tumblr .sidebar .column:hover a:after  {
-    position: relative;
+    left:2em;
   }
   
   .tumblr .sidebar a:after {
-    content: "\0025B6 ";
+    content: "\0025B6";
     position: absolute;
     left: 0em;
     -moz-transition: all .5s ease-in-out;
