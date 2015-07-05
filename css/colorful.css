@@ -16,16 +16,24 @@ button {
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
 }
+@media only screen {
+  .btn {
+    display: inline-block;
+    line-height: 2em;
+    margin: .1em;
+    padding: 0 .5em;
+    position: relative;
+    opacity: .999;
+    border-radius: 3px;
+  }
+}
 
-.btn {
-  display: inline-block;
-  line-height: 35px;
-  margin: 8px;
-  padding: 0 15px;
-  font-size: 15px;
-  position: relative;
-  opacity: .999;
-  border-radius: 3px;
+@media only screen and (min-width: 40.0625em) {
+  .btn {
+    margin: .4em;
+    padding: 0 1em;
+    width: 100%;
+  }
 }
 
 .btn-border-o {
