@@ -121,18 +121,6 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .5s ease-in-out;
   }
   
-  .tumblr .sidebar a:before {
-    content: "|";
-    position: absolute;
-    left: 1em;
-  }
-  
-  .tumblr .sidebar a:after {
-    content: "|";
-    position: absolute;
-    right: 1em;
-  }
-  
   p {
     background-color:rgba(252, 252, 252, .7);
     -webkit-box-shadow: 0px 0px 20px 10px rgba(252, 252, 252, .7);
@@ -147,22 +135,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.email:hover {
+.column>.email:hover {
   color:#c9252c;
   border: 1px solid #c9252c;
 }
 
-.github:hover {
+.column>.github:hover {
   color:black;
   border: 1px solid black;
 }
 
-.twitter:hover {
+.column>.twitter:hover {
   color:#55acee;
   border: 1px solid #55acee;
 }
 
-.tumblr:hover {
+.column>.tumblr:hover {
   color:#35465c;
   border: 1px solid #35465c;
 }
