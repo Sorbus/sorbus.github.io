@@ -63,8 +63,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align:center;
   }
   
+  .tumblr .posts p+footer {
+    float: right;
+    margin-top: -1.25em;
+  }
+  
   header .h1 {
     text-align:center;
+  }
+  
+  .sidebar .column:nth-of-type(n+4) {
+    margin-top:1em;
   }
 }
 
@@ -90,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .tumblr .sidebar .column{
-    margin-top:0.5em;
+    margin-top:1em;
     text-align: center;
   }
   
@@ -116,6 +125,10 @@ h1, h2, h3, h4, h5, h6 {
   
   header .h1 {
     text-align:left;
+  }
+  
+  .sidebar .column:nth-of-type(n+4) {
+    margin-top:0em;
   }
 }
 
