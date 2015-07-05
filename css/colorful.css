@@ -1,4 +1,4 @@
-/* source: http://codepen.io/chrisdothtml/pen/waKBdM/
+/* source: http://codepen.io/chrisdothtml/pen/waKBdM/ (with modifications)
 *  via https://www.reddit.com/r/web_design/comments/34v1q4/colorful_css_buttons/
 */
 
@@ -30,7 +30,7 @@ button {
 
 @media only screen and (min-width: 40.0625em) {
   .btn {
-    margin: .4em;
+    margin: 0em;
     padding: 0 1em;
     width: 100%;
   }

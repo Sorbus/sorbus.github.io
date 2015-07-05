@@ -62,6 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   .tumblr .sidebar .column {
     text-align:center;
   }
+  
+  header .h1 {
+    text-align:center;
+  }
 }
 
 @media only screen and (min-width: 40.0625em) {
@@ -79,24 +83,6 @@ h1, h2, h3, h4, h5, h6 {
   
   .tumblr>.row:first-of-type {
     padding-top:2em!important;
-  }
-  
-  #background {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index:-1;
-    background-image: url('../img/background.svg');
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-    background-repeat: no-repeat;
-    background-position: bottom right;
   }
   
   .tumblr .row .row {
@@ -126,6 +112,10 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-shadow: 0px 0px 20px 10px rgba(252, 252, 252, .7);
     -moz-box-shadow: 0px 0px 20px 10px rgba(252, 252, 252, .7);
     box-shadow: 0px 0px 20px 10px rgba(252, 252, 252, .7);
+  }
+  
+  header .h1 {
+    text-align:left;
   }
 }
 
