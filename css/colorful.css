@@ -6,15 +6,6 @@
   outline: none;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #ecf0f1;
-  font-family: 'Open Sans', sans-serif;
-}
-
 button {
   background-color: transparent;
   border: 0;
