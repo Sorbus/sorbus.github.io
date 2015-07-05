@@ -17,45 +17,6 @@ button {
           transition: all 0.3s;
 }
 
-.main-container {
-  width: 100%;
-  max-width: 750px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-h1 {
-  line-height: 1;
-  padding: 25px 0;
-  border-bottom: 1px solid #2c3e50;
-  font-size: 35px;
-  color: #2c3e50;
-  text-align: center;
-}
-
-section {
-  padding: 60px 0 61px;
-  text-align: center;
-  position: relative;
-}
-section h2 {
-  margin-bottom: 15px;
-  font-weight: normal;
-  font-size: 17px;
-  color: #D2D2D2;
-  text-align: center;
-}
-section:not(:last-child):after {
-  content: '';
-  width: 70%;
-  height: 1px;
-  border-bottom: 1px dashed #2c3e50;
-  opacity: .5;
-  position: absolute;
-  bottom: -1px;
-  left: 15%;
-}
-
 .btn {
   display: inline-block;
   line-height: 35px;
