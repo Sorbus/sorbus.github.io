@@ -58,6 +58,10 @@ h1, h2, h3, h4, h5, h6 {
   .tumblr>.row:first-of-type {
     padding-top:0em;
   }
+  
+  .tumblr .sidebar .column {
+    text-align:center;
+  }
 }
 
 @media only screen and (min-width: 40.0625em) {
@@ -66,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .row {
-    padding-top:2em;
+    padding-top:1em;
   }
 
   body>.row:first-of-type {
@@ -117,34 +121,16 @@ h1, h2, h3, h4, h5, h6 {
     transition: all .5s ease-in-out;
   }
   
-  .tumblr .sidebar .column:hover a:before  {
-    left:1em;
-  }
-  
   .tumblr .sidebar a:before {
-    content: "\0025B6";
+    content: "|";
     position: absolute;
     left: 0em;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-  
-  .tumblr .sidebar .column:hover a:after  {
-    right:1em;
   }
   
   .tumblr .sidebar a:after {
-    content: "\0025C0";
+    content: "|";
     position: absolute;
     right: 0em;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -ms-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
   }
   
   p {
