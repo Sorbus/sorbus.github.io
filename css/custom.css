@@ -95,10 +95,6 @@ h1, h2, h3, h4, h5, h6 {
     background-position: bottom right;
   }
   
-  .tumblr header {
-    margin-left:2em;
-  }
-  
   .tumblr .row .row {
     padding-top:0em;
   }
@@ -183,4 +179,8 @@ h1, h2, h3, h4, h5, h6 {
 .tumblr:hover {
   color:#35465c;
   border: 1px solid #35465c;
+}
+
+.column, .columns{
+  min-height: 1px;
 }
