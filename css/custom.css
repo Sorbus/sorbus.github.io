@@ -70,11 +70,11 @@ h1, h2, h3, h4, h5, h6 {
   
   .tumblr .posts footer .tags {
     list-style-type:none;
-    
   }
   
   .tumblr .posts footer .tags li {
     padding-right:1em;
+    float:left;
   }
   
   header .h1 {
