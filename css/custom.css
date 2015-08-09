@@ -5,6 +5,7 @@ body {
   background:#fcfcfc;
   color:#444;
   font-family:'Gentium Book Basic', serif;
+  font-size:1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,21 +34,22 @@ h1, h2, h3, h4, h5, h6 {
   font-size:1em;
   padding-top:1.5em;
   padding-bottom:1.5em;
-  -moz-transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
-	-ms-transition: all .5s ease-in-out;
-	transition: all .5s ease-in-out;
+  -moz-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	-webkit-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	-o-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	-ms-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
   background-color:#fff;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
-	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
-	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .links a:hover {
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
-	-moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
-	box-shadow: 2px 2px 5px 0px rgba(0,0,0,0);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transform:scale(1.05);
 }
 
 @media only screen {
@@ -75,6 +77,31 @@ h1, h2, h3, h4, h5, h6 {
   .tumblr .posts footer .tags li {
     padding-right:1em;
     float:left;
+  }
+  
+  .tumblr aside.notes {
+    overflow:hidden;
+    max-height:20em;
+  }
+  
+  .tumblr aside.notes:hover {
+    max-height:200em;
+  }
+  
+  .tumblr .notes ol.notes {
+    list-style:none;
+  }
+  
+  .tumblr .notes ol.notes li {
+    padding-top:.1em;
+  }
+  
+  .tumblr .notes ol.notes li .avatar {
+    padding-ight:.5em;
+  }
+  
+  .tumblr aside.notes {
+    
   }
   
   header .h1 {
@@ -147,24 +174,52 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.column>.email {
+  color:#fcfcfc;
+  background-color:#c9252c;
+  border: 2px solid #c9252c;
+}
+
 .column>.email:hover {
   color:#c9252c;
-  border: 1px solid #c9252c;
+  background-color:#fcfcfc;
+  border: 2px solid #c9252c;
+}
+
+.column>.github {
+  color:#fcfcfc;
+  background-color:black;
+  border: 2px solid black;
 }
 
 .column>.github:hover {
   color:black;
-  border: 1px solid black;
+  background-color:#fcfcfc;
+  border: 2px solid black;
+}
+
+.column>.twitter {
+  color:#fcfcfc;
+  background-color: #55acee;
+  border: 2px solid #55acee;
 }
 
 .column>.twitter:hover {
   color:#55acee;
-  border: 1px solid #55acee;
+  background-color:#fcfcfc;
+  border: 2px solid #55acee;
+}
+
+.column>.tumblr {
+  color:#fcfcfc;
+  background-color:#35465c;
+  border: 2px solid #35465c;
 }
 
 .column>.tumblr:hover {
   color:#35465c;
-  border: 1px solid #35465c;
+  background-color:#fcfcfc;
+  border: 2px solid #35465c;
 }
 
 .column, .columns{
