@@ -35,22 +35,13 @@ a.icon {
   font-size:1.1rem;
   padding-top:1.6rem;
   color:#fcfcfc;
-  -moz-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
-	-webkit-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
-	-o-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
-	-ms-transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
 	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
   background-color:#fff;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   border: solid 0px;
 }
 
 a.icon:hover {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color:transparent;
   box-shadow:none;
 }
@@ -98,7 +89,7 @@ a.icon:hover:after {
     z-index:-2;
     left:0px;
     top:0px;
-    background-color: rgba(252, 252, 252, .5);
+    background-color: rgba(252, 252, 252, .7);
   }
 
   nav .small-4 {
@@ -157,12 +148,18 @@ a.icon:hover:after {
     text-align:center;
   }
   
-  footer {
+  footer.bottom {
     position:absolute;
     bottom:0px;
-    right:0px;
-    padding-right:1em;
-    height:2em;
+    z-index:-1;
+    padding-right:0em;
+    padding-top:0em;
+    text-align:center;
+    height:1.75em;
+    width:100%;
+    background-color:rgba(0,0,0,.12);
+    box-shadow: 0px -1em 3em 1em rgba(0,0,0,0.12);
+    color:#666666;
   }
   
   .sidebar .column:nth-of-type(n+4) {
@@ -213,8 +210,6 @@ a.icon:hover:after {
     padding:1em;
     background-color:rgba(252, 252, 252, .4);
     border-radius:1.5em;
-    -webkit-box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1);
-    -moz-box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1);
     box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   }
   
@@ -225,6 +220,11 @@ a.icon:hover:after {
   .sidebar .column:nth-of-type(n+4) {
     padding-top:0em;
   }
+  
+  footer.bottom {
+    text-align:right;
+    padding-right:1em;
+  }
 }
 
 @media only screen and (min-width: 64.0625em) {
@@ -233,54 +233,54 @@ a.icon:hover:after {
   }
 }
 
+.email svg {transform:scale(.8);}
+.email svg .style0 {fill:transparent;stroke:rgba(201, 37, 44, .7);transition:0.2s stroke ease;}
+.email svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+.email:hover svg .style0 {stroke:#fcfcfc;}
+.email:hover svg .style1 {fill:rgba(201, 37, 44, 1);}
+
 .column>.email {
+  padding-top:.77em;
   background-color:rgba(201, 37, 44, .7);
 }
 
-.column>.email:hover {
-  color:rgba(201, 37, 44, 1);
-}
+.column>.email:hover {color:rgba(201, 37, 44, 1);}
+.column>.email:after {border-color:rgba(201, 37, 44, 1);}
 
-.column>.email:after {
-  border-color:rgba(201, 37, 44, 1);
-}
+.github svg {fill:#fcfcfc;transition:0.2s fill ease;}
+.github:hover svg {fill:rgba(0, 0, 0, 1);}
 
 .column>.github {
+  padding-top:.75em;
   background-color:rgba(0, 0, 0, .7);
 }
 
-.column>.github:hover {
-  color:rgba(0, 0, 0, 1);
-}
+.column>.github:hover {color:rgba(0, 0, 0, 1);}
 
-.column>.github:after {
-  border-color:rgba(0, 0, 0, 1);
-}
+.column>.github:after {border-color:rgba(0, 0, 0, 1);}
+
+.twitter svg {}
+.twitter svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+.twitter:hover svg .style1 {fill:rgba(85, 172, 238, 1);}
 
 .column>.twitter {
+  padding-top:1.25em;
   background-color:rgba(85, 172, 238, .7);
 }
 
-.column>.twitter:hover {
-  color:rgba(85, 172, 238, 1);
-}
+.column>.twitter:hover {color:rgba(85, 172, 238, 1);}
+.column>.twitter:after {border-color:rgba(85, 172, 238, 1);}
 
-.column>.twitter:after {
-  border-color:rgba(85, 172, 238, 1);
-}
+.tumblr svg {transform:scale(1.2);}
+.tumblr svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+.tumblr:hover svg .style1 {fill:rgba(53, 70, 92, 1);}
 
 .column>.tumblr {
-  background-color:rgba(53, 70, 92, .7);
+  padding-top:1.25em;
+  background-color:rgb(110, 122, 138)
 }
 
-.column>.tumblr:hover {
-  color:rgba(53, 70, 92, 1);
-}
+.column>.tumblr:hover {color:rgba(53, 70, 92, 1);}
+.column>.tumblr:after {border-color:rgba(53, 70, 92, 1);}
 
-.column>.tumblr:after {
-  border-color:rgba(53, 70, 92, 1);
-}
-
-.column, .columns{
-  min-height: 1px;
-}
+.column, .columns{min-height: 1px;}
