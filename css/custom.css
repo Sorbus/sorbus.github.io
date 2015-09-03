@@ -44,6 +44,11 @@
     text-align:justify;
   }
   
+  .wrap {
+    min-height:100%;
+    position:relative;
+  }
+  
   footer.bottom {
     position:absolute;
     bottom:0px;
