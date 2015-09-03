@@ -31,7 +31,8 @@
   }
   
   main {
-    padding-bottom:3em;
+    padding-bottom:2em;
+    padding-top:1em;
   }
   
   section {
@@ -216,13 +217,17 @@
     width: 100%;
     min-height: 5em;
     float: left;
-    backface-visibility:hidden;
+    backface-visibility:true;
+    font-size:inherit;
     transition:transform 0.6s ease;
     transform-style: preserve-3d;
+    padding:0em!important;
+    margin-left:0em!important;
   }
   
   .flipper>section {
-    backface-visibility:hidden; 
+    backface-visibility:hidden;
+    min-height:10em;
   }
   
   .flipper>section:nth-of-type(2) {
@@ -386,5 +391,3 @@
     padding-top:10em;
   }
 }
-
-.email>svg {transform:scale(0.8);}
