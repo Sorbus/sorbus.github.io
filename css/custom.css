@@ -1,73 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,900');
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,900');
 
-body {
-  background:#fcfcfc;
-  color:#444;
-  font-family:'Gentium Book Basic', serif;
-  font-size:1rem;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family:'Merriweather', normal;
-  color:#222;
-}
-
-.post>p {
-  text-align:justify;
-}
-
-.definition {
-  text-align:justify;
-}
-
-nav .column {
-  text-align:center;
-}
-
-a.icon {
-  font-family:'Merriweather', normal;
-  border-radius:100%;
-  display:inline-block;
-  position:relative;
-  width:5rem;
-  height:4.9rem;
-  font-size:1.1rem;
-  padding-top:1.6rem;
-  color:#fcfcfc;
-	transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
-  background-color:#fff;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  border: solid 0px;
-}
-
-a.icon:hover {
-  background-color:transparent;
-  box-shadow:none;
-}
-
-a.icon:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border: solid 0px;
-  transform: scale(0.99);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-a.icon:hover:after {
-  border:solid 2px;
-  background-color:rgba(252, 252, 252, .7);
-  transform: scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  z-index:-1;
-}
-
 @media only screen {
+
+  /* main appearance */
+  
+  body {
+    background:#fcfcfc;
+    color:#444;
+    font-family:'Gentium Book Basic', serif;
+    font-size:1rem;
+  }
+  
+  header {
+    text-align:center;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family:'Merriweather', normal;
+    color:#222;
+    text-shadow:.03em .03em #888;
+  }
+  
+  nav .small-4 {
+    margin-bottom:2em;
+  }
+  
+  nav .column {
+    text-align:center;
+  }
+  
+  main {
+    padding-bottom:3em;
+  }
+  
+  section {
+    position:relative;
+    background-color:rgba(252, 252, 252, .5);
+    padding:.5em 1em;
+    box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, 0), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition:transform 0.5s ease,max-height 0.2s ease;
+    overflow:hidden;
+    text-align:justify;
+  }
+  
+  footer.bottom {
+    position:absolute;
+    bottom:0px;
+    z-index:-1;
+    padding-right:0em;
+    padding-top:0em;
+    text-align:center;
+    height:1.75em;
+    width:100%;
+    background-color:rgba(0,0,0,.12);
+    box-shadow: 0px -1em 3em 1em rgba(0,0,0,0.12);
+    color:#666666;
+  }
+  
+  /* background */
+  
   .bg {
     background-image: url(../img/8361494792_7aba723044_k.jpg);
     background-attachment: fixed;
@@ -80,7 +72,6 @@ a.icon:hover:after {
     left:0px;
     top:0px;
   }
-  
   .bg:after {
     content: "";
     width:100%;
@@ -91,10 +82,154 @@ a.icon:hover:after {
     top:0px;
     background-color: rgba(252, 252, 252, .7);
   }
-
-  nav .small-4 {
-    margin-bottom:2em;
+  
+  /* icon links */
+  
+  a.icon {
+    font-family:'Merriweather', normal;
+    border-radius:100%;
+    display:inline-block;
+    position:relative;
+    width:5rem;
+    height:4.9rem;
+    font-size:1.1rem;
+    padding-top:1.6rem;
+    color:#fcfcfc;
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+    background-color:#fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border: solid 0px;
   }
+  a.icon:hover {
+    background-color:transparent;
+    box-shadow:none;
+  }
+  a.icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: solid 0px;
+    transform: scale(0.99);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  a.icon:hover:after {
+    border:solid 2px;
+    background-color:rgba(252, 252, 252, 1);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index:-1;
+  }
+  
+  /* individual icons */
+  
+  .email>svg {transform:scale(.8);}
+  .email>svg .style0 {fill:transparent;stroke:rgba(201, 37, 44, .7);transition:0.2s stroke ease;}
+  .email>svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+  .email:hover>svg .style0 {stroke:#fcfcfc;}
+  .email:hover>svg .style1 {fill:rgba(201, 37, 44, 1);}
+
+  .column>.email {
+    padding-top:.77em;
+    background-color:rgba(201, 37, 44, .7);
+  }
+
+  .column>.email:hover {color:rgba(201, 37, 44, 1);}
+  .column>.email:after {border-color:rgba(201, 37, 44, 1);}
+
+  .github>svg {fill:#fcfcfc;transition:0.2s fill ease;}
+  .github:hover>svg {fill:rgba(0, 0, 0, 1);}
+
+  .column>.github {
+    padding-top:.75em;
+    background-color:rgba(0, 0, 0, .7);
+  }
+
+  .column>.github:hover {color:rgba(0, 0, 0, 1);}
+
+  .column>.github:after {border-color:rgba(0, 0, 0, 1);}
+
+  .twitter>svg {}
+  .twitter>svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+  .twitter:hover>svg .style1 {fill:rgba(85, 172, 238, 1);}
+
+  .column>.twitter {
+    padding-top:1.25em;
+    background-color:rgba(85, 172, 238, .7);
+  }
+
+  .column>.twitter:hover {color:rgba(85, 172, 238, 1);}
+  .column>.twitter:after {border-color:rgba(85, 172, 238, 1);}
+
+  .tumblr>svg {transform:scale(1.2);}
+  .tumblr>svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
+  .tumblr:hover>svg .style1 {fill:rgba(53, 70, 92, 1);}
+
+  .column>.tumblr {
+    padding-top:1.25em;
+    background-color:rgb(110, 122, 138)
+  }
+
+  .column>.tumblr:hover {color:rgba(53, 70, 92, 1);}
+  .column>.tumblr:after {border-color:rgba(53, 70, 92, 1);}
+
+  .column, .columns{min-height: 1px;}
+  
+  /* toggle and flipper */
+  
+  #toggle {
+    display:none;}   
+  #toggle + label {
+    padding-bottom:1em;}
+  #toggle + .column>.switch>label {
+    border-radius:1em;}
+  #toggle + .column>.switch>label:after {
+    border-radius:50%;}
+  #toggle + .column>.switch.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4rem;}
+  #toggle + .column>.switch>label {
+    background: #BA008C;
+    opacity:0.7;
+    transition:background 0.1s ease;}
+  #toggle:checked + .column>.switch>label {
+    background: #008CBA; }
+  #toggle:checked + .column>.switch>label:after {
+    left: 2.25rem; }
+  #toggle:checked + .column>.switch.large>label:after {
+    left: 2.75rem; }
+  #toggle:checked + .column>.switch.small>label:after {
+    left: 2rem; }
+  #toggle:checked + .column>.switch.tiny>label:after {
+    left: 1.75rem; }
+    
+  .flipper {
+    width: 100%;
+    min-height: 5em;
+    float: left;
+    backface-visibility:hidden;
+    transition:transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .flipper>section {
+    backface-visibility:hidden; 
+  }
+  
+  .flipper>section:nth-of-type(2) {
+    transform:rotateX(180deg);
+    margin-top:-50%;
+  }
+  
+  #toggle:checked ~ .flipper {
+    transform:rotateX(180deg);
+  }
+  
+  /* tumblr stuff - to refactor&remove */
   
   .tumblr>.row:first-of-type {
     padding-top:0em;
@@ -144,33 +279,17 @@ a.icon:hover:after {
     
   }
   
-  header .h1 {
-    text-align:center;
-  }
-  
-  footer.bottom {
-    position:absolute;
-    bottom:0px;
-    z-index:-1;
-    padding-right:0em;
-    padding-top:0em;
-    text-align:center;
-    height:1.75em;
-    width:100%;
-    background-color:rgba(0,0,0,.12);
-    box-shadow: 0px -1em 3em 1em rgba(0,0,0,0.12);
-    color:#666666;
-  }
-  
   .sidebar .column:nth-of-type(n+4) {
     padding-top:1em;
+  }
+  
+    .post>p {
+    text-align:justify;
   }
 }
 
 @media only screen and (min-width: 40.0625em) {
-  nav .small-4 {
-    margin-bottom:0em;
-  }
+  /* main appearance */
 
   .row {
     padding-top:1em;
@@ -179,6 +298,46 @@ a.icon:hover:after {
   body>div.row:first-of-type {
     padding-top:5em;
   }
+  
+  main {
+    padding-bottom:2em;
+  }
+  
+  section {
+    background-color:rgba(252, 252, 252, .9);
+  }
+  
+  section:nth-of-type(1) {
+    left:25%;
+  }
+  
+  section:nth-of-type(2) {
+    left:-25%;
+  }
+  
+  nav .small-4 {
+    margin-bottom:0em;
+  }
+  
+  .definition {
+    padding:1em;
+    background-color:rgba(252, 252, 252, .4);
+    border-radius:1.5em;
+    box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  footer.bottom {
+    text-align:right;
+    padding-right:1em;
+  }
+  
+  /* flipper */
+  
+  .flipper>section:nth-of-type(2) {
+    margin-top:0%!important;
+  }
+  
+  /* tumblr stuff - to refactor&remove */
   
   .tumblr>.row:first-of-type {
     padding-top:2em!important;
@@ -206,24 +365,8 @@ a.icon:hover:after {
     transition: all .5s ease-in-out;
   }
   
-  .definition {
-    padding:1em;
-    background-color:rgba(252, 252, 252, .4);
-    border-radius:1.5em;
-    box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
-  
-  header .h1 {
-    text-align:left;
-  }
-  
   .sidebar .column:nth-of-type(n+4) {
     padding-top:0em;
-  }
-  
-  footer.bottom {
-    text-align:right;
-    padding-right:1em;
   }
 }
 
@@ -233,54 +376,4 @@ a.icon:hover:after {
   }
 }
 
-.email svg {transform:scale(.8);}
-.email svg .style0 {fill:transparent;stroke:rgba(201, 37, 44, .7);transition:0.2s stroke ease;}
-.email svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
-.email:hover svg .style0 {stroke:#fcfcfc;}
-.email:hover svg .style1 {fill:rgba(201, 37, 44, 1);}
-
-.column>.email {
-  padding-top:.77em;
-  background-color:rgba(201, 37, 44, .7);
-}
-
-.column>.email:hover {color:rgba(201, 37, 44, 1);}
-.column>.email:after {border-color:rgba(201, 37, 44, 1);}
-
-.github svg {fill:#fcfcfc;transition:0.2s fill ease;}
-.github:hover svg {fill:rgba(0, 0, 0, 1);}
-
-.column>.github {
-  padding-top:.75em;
-  background-color:rgba(0, 0, 0, .7);
-}
-
-.column>.github:hover {color:rgba(0, 0, 0, 1);}
-
-.column>.github:after {border-color:rgba(0, 0, 0, 1);}
-
-.twitter svg {}
-.twitter svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
-.twitter:hover svg .style1 {fill:rgba(85, 172, 238, 1);}
-
-.column>.twitter {
-  padding-top:1.25em;
-  background-color:rgba(85, 172, 238, .7);
-}
-
-.column>.twitter:hover {color:rgba(85, 172, 238, 1);}
-.column>.twitter:after {border-color:rgba(85, 172, 238, 1);}
-
-.tumblr svg {transform:scale(1.2);}
-.tumblr svg .style1 {fill:#fcfcfc;transition:0.2s fill ease;}
-.tumblr:hover svg .style1 {fill:rgba(53, 70, 92, 1);}
-
-.column>.tumblr {
-  padding-top:1.25em;
-  background-color:rgb(110, 122, 138)
-}
-
-.column>.tumblr:hover {color:rgba(53, 70, 92, 1);}
-.column>.tumblr:after {border-color:rgba(53, 70, 92, 1);}
-
-.column, .columns{min-height: 1px;}
+.email>svg {transform:scale(0.8);}
