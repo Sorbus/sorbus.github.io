@@ -283,8 +283,14 @@
     padding-top:1em;
   }
   
-    .post>p {
+  .post>p {
     text-align:justify;
+  }
+  
+  .tumblr section.posts {
+    left:0%;
+    padding:0em;
+    box-shadow:none;
   }
 }
 
