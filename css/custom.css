@@ -240,6 +240,8 @@
     padding:0em!important;
     margin-left:0em!important;
     margin-right:0em!important;
+    -webkit-perspective: 800px;
+            perspective: 800px;
     }
   
   .flipper>section {
