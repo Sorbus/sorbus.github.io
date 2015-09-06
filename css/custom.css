@@ -10,6 +10,13 @@
     color:#444;
     font-family:'Gentium Book Basic', serif;
     font-size:1rem;
+    
+    /* Using the more versatile background div breaks the card flip on iOS Safari.
+       So the background is here instead. */
+    background-image: url(../img/8361494792_7aba723044_k_f.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
   }
   
   header {
@@ -67,7 +74,7 @@
   
   /* background */
   
-  .bg {
+/*  .bg {
     background-image: url(../img/8361494792_7aba723044_k.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -75,7 +82,7 @@
     width: 100%;
     min-height: 100%;
     position: fixed;
-    z-index: -3;
+    z-index: -5;
     left:0px;
     top:0px;
   }
@@ -84,11 +91,11 @@
     width:100%;
     height:100%;
     position:fixed;
-    z-index:-2;
+    z-index:-4;
     left:0px;
     top:0px;
     background-color: rgba(252, 252, 252, .7);
-  }
+  }*/
   
   /* icon links */
   
@@ -229,19 +236,23 @@
     left: 1.75rem; }
     
   .flipper {
+    position:relative;
+    z-index:5;
     min-height: 5em;
     -webkit-backface-visibility:true;
             backface-visibility:true;
     font-size:inherit;
-    -webkit-transition:-webkit-transform 0.6s ease;
+    -webkit-transition:-webkit-transform 0.6s ease, -webkit-backface-visibility 0s ease-in-out;;
             transition:transform 0.6s ease;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     padding:0em!important;
     margin-left:0em!important;
     margin-right:0em!important;
-    -webkit-perspective: 800px;
-            perspective: 800px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+    -webkit-transform:translate3d(0,0,10);
+            transform:translate3d(0,0,10);
     }
   
   .flipper>section {
@@ -251,6 +262,7 @@
   }
   
   .flipper>section:nth-of-type(2) {
+    -webkit-transform: scaleY(-1);
     -webkit-transform:rotateX(180deg) translate3d(0,0,0);
             transform:rotateX(180deg) translate3d(0,0,0);
     position:absolute;
@@ -261,6 +273,10 @@
   #toggle:checked ~ .flipper {
     -webkit-transform:rotateX(180deg) translate3d(0,0,0);
             transform:rotateX(180deg) translate3d(0,0,0);
+  }
+  
+  #toggle:check ~ .flipper>section:nth-of-type(2) {
+    -webkit-backface-visibility:visible;
   }
   
   /* tumblr stuff - to refactor&remove */
