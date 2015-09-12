@@ -249,8 +249,8 @@
     padding:0em!important;
     margin-left:0em!important;
     margin-right:0em!important;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
+    -webkit-perspective: 10em;
+            perspective: 10em;
     -webkit-transform:translate3d(0,0,10);
             transform:translate3d(0,0,10);
     }
@@ -277,6 +277,28 @@
   
   #toggle:check ~ .flipper>section:nth-of-type(2) {
     -webkit-backface-visibility:visible;
+  }
+  
+  /* wobble */
+  
+  .flipper {
+    animation-name:wobble;
+    animation-iteration-count:1;
+    animation-duration:2s;
+    animation-delay:1s;
+    animation-timing-function:ease-out;
+  }
+  
+  @keyframes wobble {
+    15% {
+      transform: rotateZ(2deg) translate3d(0,0,0);
+    }
+    45% {
+      transform: rotateZ(-1deg) translate3d(0,0,0);
+    }
+    75% {
+      transform: rotateZ(.5deg) translate3d(0,0,0);
+    }
   }
   
   /* tumblr stuff - to refactor&remove */
