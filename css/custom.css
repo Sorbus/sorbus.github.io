@@ -6,14 +6,13 @@
   /* main appearance */
 
   body {
-    background:#fcfcfc;
-    color:#444;
+    background:#E5E8E8;
+    color:#283747;
     font-family:'Gentium Book Basic', serif;
     font-size:1rem;
     
-    /* Using the more versatile background div breaks the card flip on iOS Safari.
-       So the background is here instead. */
-    background-image: url(../img/8361494792_7aba723044_k_f.jpg);
+    /* 
+    background-image: url(../img/8361494792_7aba723044_k_f.jpg); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -38,19 +37,23 @@
   }
   
   main {
-    padding-bottom:2em;
     padding-top:1em;
+  }
+
+  main div{
+    padding-bottom:0.5em;
   }
   
   section {
-    position:relative;
     background-color:rgba(252, 252, 252, .5);
     padding:.5em 1em;
     box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, 0), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    -webkit-transition:-webkit-transform 0.5s ease,max-height 0.2s ease;
-            transition:transform 0.5s ease,max-height 0.2s ease;
     overflow:hidden;
     text-align:justify;
+  }
+
+  section>p::first-letter{
+    padding-left:1em;
   }
   
   .wrap {
@@ -61,408 +64,74 @@
   footer.bottom {
     position:absolute;
     bottom:0px;
-    z-index:0;
+    z-index:-1;
     padding-right:0em;
     padding-top:0em;
     text-align:center;
     height:1.75em;
     width:100%;
-    background-color:rgba(0,0,0,.12);
-    box-shadow: 0px -1em 3em 1em rgba(0,0,0,0.12);
+    background-color:rgba(0,0,0,.08);
+    box-shadow: 0px -1em 3em 1em rgba(0,0,0,0.08);
     color:#666666;
   }
-  
-  /* background */
-  
-/*  .bg {
-    background-image: url(../img/8361494792_7aba723044_k.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 100%;
-    position: fixed;
-    z-index: -5;
-    left:0px;
-    top:0px;
-  }
-  .bg:after {
-    content: "";
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:-4;
-    left:0px;
-    top:0px;
-    background-color: rgba(252, 252, 252, .7);
-  }*/
-  
-  /* icon links */
-  
-  nav.row {
-    padding-top:0em;
+
+  .column, .columns{
+    min-height: 1px;
   }
 
-  nav.row>.column {
+  .columns.full{
     padding:0em;
   }
 
-  a.icon {
-    font-family:'Merriweather', normal;
-    border-radius:50%;
-    display:inline-block;
-    position:relative;
-    width:5rem;
-    height:4.9rem;
-    font-size:1.1rem;
-    padding-top:1.6rem;
-    color:#fcfcfc;
-    -webkit-transition: color 0.2s ease, background-color 0.2s ease, -webkit-transform 0.3s ease;
-            transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
-    background-color:#fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    border: solid 0px;
-  }
-  a.icon:hover {
-    background-color:transparent;
-    box-shadow:none;
-  }
-  a.icon:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    -webkit-transform: scale(0.8) translate3d(0,0,0);
-        -ms-transform: scale(0.8) translate3d(0,0,0);
-            transform: scale(0.8) translate3d(0,0,0);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border: solid r(2);
-    border-radius: 50%;
-    -webkit-transition: all 0.3s ease;
-            transition: all 0.3s ease;
-  }
-  a.icon:hover:after {
-    border:solid 2px;
-    background-color:rgba(252, 252, 252, 1);
-    -webkit-transform: scale(1.1) translate3d(0,0,0);
-        -ms-transform: scale(1.1) translate3d(0,0,0);
-            transform: scale(1.1) translate3d(0,0,0);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    z-index:-1;
-  }
-  
-  /* individual icons */
-  
-  .email>svg {
-    -webkit-transform:scale(.8) translate3d(0,0,0);
-        -ms-transform:scale(.8) translate3d(0,0,0);
-            transform:scale(.8) translate3d(0,0,0);}
-  .email>svg .style0 {fill:transparent;stroke:rgba(201, 37, 44, .7);-webkit-transition:0.2s stroke ease;transition:0.2s stroke ease;}
-  .email>svg .style1 {fill:#fcfcfc;-webkit-transition:0.2s fill ease;transition:0.2s fill ease;}
-  .email:hover>svg .style0 {stroke:#fcfcfc;}
-  .email:hover>svg .style1 {fill:rgba(201, 37, 44, 1);}
-
-  .column>.email {
-    padding-top:.77em;
-    background-color:rgba(201, 37, 44, .7);
+  .nobottom{
+    margin-bottom:0em;
+    padding-bottom:0em;
   }
 
-  .column>.email:hover {color:rgba(201, 37, 44, 1);}
-  .column>.email:after {border-color:rgba(201, 37, 44, 1);}
-
-  .github>svg {fill:#fcfcfc;-webkit-transition:0.2s fill ease;transition:0.2s fill ease;}
-  .github:hover>svg {fill:rgba(0, 0, 0, 1);}
-
-  .column>.github {
-    padding-top:.75em;
-    background-color:rgba(0, 0, 0, .7);
-  }
-
-  .column>.github:hover {color:rgba(0, 0, 0, 1);}
-
-  .column>.github:after {border-color:rgba(0, 0, 0, 1);}
-
-  .twitter>svg {}
-  .twitter>svg .style1 {fill:#fcfcfc;-webkit-transition:0.2s fill ease;transition:0.2s fill ease;}
-  .twitter:hover>svg .style1 {fill:rgba(85, 172, 238, 1);}
-
-  .column>.twitter {
-    padding-top:1.25em;
-    background-color:rgba(85, 172, 238, .7);
-  }
-
-  .column>.twitter:hover {color:rgba(85, 172, 238, 1);}
-  .column>.twitter:after {border-color:rgba(85, 172, 238, 1);}
-
-  .tumblr>svg {
-    -webkit-transform:scale(1.2) translate3d(0,0,0);
-        -ms-transform:scale(1.2) translate3d(0,0,0);
-            transform:scale(1.2) translate3d(0,0,0);}
-  .tumblr>svg .style1 {fill:#fcfcfc;-webkit-transition:0.2s fill ease;transition:0.2s fill ease;}
-  .tumblr:hover>svg .style1 {fill:rgba(53, 70, 92, 1);}
-
-  .column>.tumblr {
-    padding-top:1.25em;
-    background-color:rgb(110, 122, 138)
-  }
-
-  .column>.tumblr:hover {color:rgba(53, 70, 92, 1);}
-  .column>.tumblr:after {border-color:rgba(53, 70, 92, 1);}
-
-  .column, .columns{min-height: 1px;}
-  
-  /* toggle and flipper */
-  
-  #toggle {
-    display:none;}   
-  #toggle + label {
-    padding-bottom:1em;}
-  #toggle + .column>.switch>label {
-    border-radius:1em;}
-  #toggle + .column>.switch>label:after {
-    border-radius:50%;}
-  #toggle + .column>.switch.center {
-    margin-left: auto;
-    margin-right: auto;
-    width: 4rem;}
-  #toggle + .column>.switch>label {
-    background: #BA008C;
-    opacity:0.7;
-    filter:alpha(opacity=70);
-    -webkit-transition:background 0.1s ease;
-            transition:background 0.1s ease;}
-  #toggle:checked + .column>.switch>label {
-    background: #008CBA; }
-  #toggle:checked + .column>.switch>label:after {
-    left: 2.25rem; }
-  #toggle:checked + .column>.switch.large>label:after {
-    left: 2.75rem; }
-  #toggle:checked + .column>.switch.small>label:after {
-    left: 2rem; }
-  #toggle:checked + .column>.switch.tiny>label:after {
-    left: 1.75rem; }
-    
-  .flipper {
-    position:relative;
-    z-index:5;
-    min-height: 5em;
-    -webkit-backface-visibility:true;
-            backface-visibility:true;
-    font-size:inherit;
-    -webkit-transition:-webkit-transform 0.6s ease, -webkit-backface-visibility 0s ease-in-out;;
-            transition:transform 0.6s ease;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    padding:0em!important;
-    margin-left:0em!important;
-    margin-right:0em!important;
-    -webkit-perspective: 10em;
-            perspective: 10em;
-    -webkit-transform:translate3d(0,0,10);
-            transform:translate3d(0,0,10);
-    }
-  
-  .flipper>section {
-    -webkit-backface-visibility:hidden;
-            backface-visibility:hidden;
-    min-height:10em;
-  }
-  
-  .flipper>section:nth-of-type(2) {
-    -webkit-transform: scaleY(-1);
-    -webkit-transform:rotateX(180deg) translate3d(0,0,0);
-            transform:rotateX(180deg) translate3d(0,0,0);
-    position:absolute;
-    top:0em;
-    height:100%;
-  }
-  
-  #toggle:checked ~ .flipper {
-    -webkit-transform:rotateX(180deg) translate3d(0,0,0);
-            transform:rotateX(180deg) translate3d(0,0,0);
-  }
-  
-  #toggle:check ~ .flipper>section:nth-of-type(2) {
-    -webkit-backface-visibility:visible;
+  .nomargin{
+    margin:0em!important;
   }
   
   /* wobble */
   
-  .flipper {
-    animation-name:wobble;
+  section.fade1 {
+    opacity:0;
+    animation-name:fadein;
+    animation-fill-mode: forwards;
+    animation-iteration-count:1;
+    animation-duration:2s;
+    animation-delay:0s;
+    animation-timing-function:ease-out;
+  }
+  section.fade2 {
+    opacity:0;
+    animation-fill-mode: forwards;
+    animation-name:fadein;
     animation-iteration-count:1;
     animation-duration:2s;
     animation-delay:1s;
     animation-timing-function:ease-out;
   }
   
-  @keyframes wobble {
-    15% {
-      transform: rotateZ(2deg) translate3d(0,0,0);
-    }
-    45% {
-      transform: rotateZ(-1deg) translate3d(0,0,0);
-    }
-    75% {
-      transform: rotateZ(.5deg) translate3d(0,0,0);
-    }
-  }
-  
-  /* tumblr stuff - to refactor&remove */
-  
-  .tumblr>.row:first-of-type {
-    padding-top:0em;
-  }
-  
-  .tumblr .sidebar .column {
-    text-align:center;
-  }
-  
-  .tumblr .posts p+footer .small {
-    float: right;
-    margin-top: -1.25em;
-  }
-  
-  .tumblr .posts footer .tags {
-    list-style-type:none;
-  }
-  
-  .tumblr .posts footer .tags li {
-    padding-right:1em;
-    float:left;
-  }
-  
-  .tumblr aside.notes {
-    overflow:hidden;
-    max-height:20em;
-    -webkit-transition:max-height .4s ease;
-            transition:max-height .4s ease;
-  }
-  
-  .tumblr aside.notes:hover {
-    max-height:200em;
-  }
-  
-  .tumblr .notes ol.notes {
-    list-style:none;
-  }
-  
-  .tumblr .notes ol.notes li {
-    padding-top:.1em;
-  }
-  
-  .tumblr .notes ol.notes li .avatar {
-    padding-ight:.5em;
-  }
-  
-  .tumblr aside.notes {
-    
-  }
-  
-  .sidebar .column:nth-of-type(n+4) {
-    padding-top:1em;
-  }
-  
-  .post>p {
-    text-align:justify;
-  }
-  
-  .tumblr section.posts {
-    left:0%;
-    padding:0em;
-    box-shadow:none;
+  @keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 }
 
 @media only screen and (min-width: 40.0625em) {
   /* main appearance */
-
-  .row {
-    padding-top:1em;
-  }
-
-  nav {
-    padding-top:1em;
-    padding-bottom:2em;
-  }
-
-  body>div.row:first-of-type {
-    padding-top:5em;
-  }
-  
-  main {
-    padding-bottom:2em;
-  }
-  
-  .offset {
-    left:25%;
-  }
-  
-  section {
-    background-color:rgba(252, 252, 252, .9);
-  }
-  
-  nav .small-4 {
-    margin-bottom:0em;
-  }
-
-  nav .medium-0 {
-    display:none;
-  }
-  
-  .definition {
-    padding:1em;
-    background-color:rgba(252, 252, 252, .4);
-    border-radius:1.5em;
-    box-shadow: 0px 0px 60px 60px rgba(252, 252, 252, .1), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
   
   footer.bottom {
     text-align:right;
     padding-right:1em;
   }
-  
-  /* flipper */
-  
-  .flipper>section:nth-of-type(2) {
-    margin-top:0%!important;
-  }
-  
-  /* tumblr stuff - to refactor&remove */
-  
-  .tumblr>.row:first-of-type {
-    padding-top:2em!important;
-  }
-  
-  .tumblr .row .row {
-    padding-top:0em;
-  }
-  
-  .tumblr .sidebar .column{
-    margin-top:1em;
-    text-align: center;
-  }
-  
-  .tumblr .sidebar .column:first-of-type {
-    margin-top:0em;
-  }
-  
-  .tumblr .sidebar a {
-    font-family: 'Merriweather', normal;
-    display: inline-block;
-    font-size: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    -webkit-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out;
-  }
-  
-  .sidebar .column:nth-of-type(n+4) {
-    padding-top:0em;
+
+  main div{
+    padding-bottom:2em;
   }
 }
-
+ 
 @media only screen and (min-width: 64.0625em) {
   body>div.row:first-of-type {
     padding-top:10em;
