@@ -29,6 +29,13 @@ h1 {
 	margin-bottom: 0em;
 	text-align:center;
 }
+
+.fade {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Setup" tags="startup" position="">{(set: $cy_ink to 0)
 (set: $cy_shape to 0)
 (set: $cy_hair to 0)
@@ -127,12 +134,12 @@ Who could want this(link: "--&gt;")[?
 [[Reject it]]. (live:1s)[(stop:)(transition:"dissolve")[(link-goto: "Accept it").]]
 ]]]</tw-passagedata><tw-passagedata pid="18" name="Reject it" tags="" position="">[(text-style:"blur")[I'm sorry, my [mistake]&lt;mistake|.]
 
-]&lt;first|(click: ?mistake)[(replace: ?first)[]As the scraps of {
+]&lt;first|(click: ?mistake)[&lt;span class="fade f_a"&gt;(replace: ?first)[]As the scraps of {
 	(if: $cy_ink is 0)[black]
 	(else-if: $cy_ink is 1)[neon]
 	(else-if: $cy_ink is 2)[corradescent]
 	(else-if: $cy_ink is 3)[bloody]
-} ink which define her body swirl through the air, her form settles(link-reveal: ".")[ Her {
+} ink which define her body swirl through the air, her form settles&lt;/span&gt;(link: "--&gt;")[&lt;span class="fade f_b"&gt;. Her {
 	(if: $cy_shape is 0)[fingers become blunt and fleshy]
 	(else-if: $cy_shape is 1)[legs smooth and reshape themselves]
 	(else-if: $cy_shape is 2)[empty space where her arm was fills with color]
@@ -142,39 +149,39 @@ Who could want this(link: "--&gt;")[?
 	(else-if: $cy_emotion is 1)[last sparks of lightning leave her]
 	(else-if: $cy_emotion is 2)[blood sinks back into her skin]
 	(else-if: $cy_emotion is 3)[maggots bloom into a cloud of moths]
-}(link-reveal: ".")[ Her {
+}&lt;/span&gt;&lt;style&gt;.f_a{opacity:0.6;}&lt;/style&gt;(link: "--&gt;")[&lt;span class="fade f_c"&gt;. Her {
 	(if: $cy_hair is 0)[hair brushes against]
 	(else-if: $cy_hair is 1)[branches bump against]
 	(else-if: $cy_hair is 2)[tendrils wrap around]
-} you as she leans forward to (link-reveal: "welcome you.")[
+} you as she leans forward to &lt;/span&gt;[&lt;span class="f_d"&gt;welcome you.&lt;/span&gt;&lt;style&gt;.f_a{opacity:0.2;}.f_b{opacity:0.6;}&lt;/style&gt;]&lt;well|
 
-(text-style:"blur")[Do I [confuse]&lt;second| you?]
+(click: ?well)[&lt;span class="fade f1"&gt;(text-style:"blur")[Do I [confuse]&lt;second| you?]&lt;style&gt;.f_b{opacity:0.2;}.f_c{opacity:0.6;}&lt;/style&gt;&lt;/span&gt;
 (click: ?second)[&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
-	Her lips are [gentle]&lt;third| against yours.]
+	&lt;span class="fade f2"&gt;Her lips are [gentle]&lt;third| against yours.&lt;/span&gt;&lt;style&gt;.f_c{opacity:0.2;}.f_d{opacity:0.6;}&lt;/style&gt;]
 (click: ?third)[
-	(text-style:"blur")[I am not something for your [amusement]&lt;fourth|.]]
+	&lt;span class="fade f3"&gt;(text-style:"blur")[I am not something for your [amusement]&lt;fourth|.]&lt;/span&gt;&lt;style&gt;.f_d{opacity:0.2;}.f1{opacity:0.6;}&lt;/style&gt;]
 (click: ?fourth)[
-	Her [soft]&lt;fifth| fingers stroke your side.]
+	&lt;span class="fade f4"&gt;Her [soft]&lt;fifth| fingers stroke your side.&lt;/span&gt;&lt;style&gt;.f1{opacity:0.2;}.f2{opacity:0.6;}&lt;/style&gt;]
 (click: ?fifth)[
-	(text-style:"blur")[I see little reason to maintain this [pretense]&lt;sixth|.]&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f5"&gt;(text-style:"blur")[I see little reason to maintain this [pretense]&lt;sixth|.]&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f2{opacity:0.2;}.f3{opacity:0.6;}&lt;/style&gt;]
 (click: ?sixth)[
-	Her lips press [against]&lt;seventh| your neck.&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f6"&gt;Her lips press [against]&lt;seventh| your neck.&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f3{opacity:0.2;}.f4{opacity:0.6;}&lt;/style&gt;]
 (click: ?seventh)[
-	(text-style:"blur")[Don't you [realize]&lt;eighth| that that's what this is?]&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f7"&gt;(text-style:"blur")[Don't you [realize]&lt;eighth| that that's what this is?]&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f4{opacity:0.2;}.f5{opacity:0.6;}&lt;/style&gt;]
 (click: ?eighth)[
-	Her legs [tangle]&lt;ninth| around yours.&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f8"&gt;Her legs [tangle]&lt;ninth| around yours.&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f5{opacity:0.2;}.f6{opacity:0.6;}&lt;/style&gt;]
 (click: ?ninth)[
-	(text-style:"blur")[There's even less reason to [pretend]&lt;tenth| that I'm here for *you*.]&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f9"&gt;(text-style:"blur")[There's even less reason to [pretend]&lt;tenth| that I'm here for *you*.]&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f6{opacity:0.2;}.f7{opacity:0.6;}&lt;/style&gt;]
 (click: ?tenth)[
-	Her nails [score]&lt;eleventh| long red [marks]&lt;eleventh| along your back.&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f10"&gt;Her nails [score]&lt;eleventh| long red [marks]&lt;eleventh| along your back.&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f7{opacity:0.2;}.f8{opacity:0.6;}&lt;/style&gt;]
 (click: ?eleventh)[
-	(text-style:"blur")[This isn't about you. This was [never]&lt;twelfth| for you. None of it was.]&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f11"&gt;(text-style:"blur")[This isn't about you. This was [never]&lt;twelfth| for you. None of it was.]&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f8{opacity:0.2;}.f9{opacity:0.6;}&lt;/style&gt;]
 (click: ?twelfth)[
-	Her teeth [tear]&lt;thirteenth| into your throat.&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;]
+	&lt;span class="fade f12"&gt;Her teeth [tear]&lt;thirteenth| into your throat.&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f9{opacity:0.2;}.f10{opacity:0.6;}&lt;/style&gt;]
 (click: ?thirteenth)[
-	(text-style:"blur")[Now let me fade in peace.]&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;
+	&lt;span class="fade f13"&gt;(text-style:"blur")[Now let me fade in peace.]&lt;/span&gt;&lt;script&gt;window.scrollTo(0,document.body.scrollHeight);&lt;/script&gt;&lt;style&gt;.f10{opacity:0.2;}.f11{opacity:0.6;}&lt;/style&gt;
 	(replace: ?9)[]
-	(live:2s)[(stop:)((link:"restart")[(reload:)]?)]]
+	(live:2s)[(stop:)((link:"restart")[(reload:)]?)&lt;style&gt;.f11,.f12{opacity:0.2;}.f13{opacity:0.6;}&lt;/style&gt;]]
 ]]]]</tw-passagedata><tw-passagedata pid="19" name="Accept it" tags="" position="">Her {
 	(if: $cy_hair is 0)[hair brushes]
 	(else-if: $cy_hair is 1)[branches bump]
