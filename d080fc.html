@@ -100,15 +100,15 @@ A corradescent sphere casts (link: "light")[ever-changing light] through the chu
 	(click: ?window)[(display: "knock-window")]
 	(click: ?paints)[(display: "knock-paints")]
 	(click: ?walls)[(display: "knock-walls")]
-}</tw-passagedata><tw-passagedata pid="15" name="Leave" tags="" position="">You turn away(link: ",")[.
+}</tw-passagedata><tw-passagedata pid="15" name="Leave" tags="" position="">You turn away(link: "--&gt;")[.
 
-Your feet echo on the ground(link: ",")[.
+Your feet echo on the ground(link: "--&gt;")[.
 
-The world is quiet(link: ",")[.
+The world is quiet(link: "--&gt;")[.
 
-*This is not for you*(link: ",")[*.*
+*This is not for you*(link: "--&gt;")[*.*
 
-Thank you(link: ",")[.
+Thank you(link: "--&gt;")[.
 
 ((link:"restart?")[(reload:)])]]]]]</tw-passagedata><tw-passagedata pid="16" name="Her" tags="" position="">{
 	[Black]&lt;cy_ink| ink drifts in the air, stains giving shape to her [sharp fingers]&lt;cy_shape| and [long hair.]&lt;cy_hair| [A |cy_em_hook&gt;[storm] circles her head.]&lt;cy_emotion|
@@ -118,11 +118,11 @@ Thank you(link: ",")[.
 	(click: ?cy_em_hook)[(display: "her-emotion")]
 }
 
-(live: 4s)[(transition:"dissolve")[(text-style:"smear")[(link-goto: "NO")]](stop:)]</tw-passagedata><tw-passagedata pid="17" name="NO" tags="" position="">No(link: ",")[!
+(live: 4s)[(transition:"dissolve")[(text-style:"smear")[(link-goto: "NO")]](stop:)]</tw-passagedata><tw-passagedata pid="17" name="NO" tags="" position="">No(link: "--&gt;")[!
 
-This isn't right(link: ",")[!
+This isn't right(link: "--&gt;")[!
 
-Who could want this(link: ",")[?
+Who could want this(link: "--&gt;")[?
 
 [[Reject it]]. (live:1s)[(stop:)(transition:"dissolve")[(link-goto: "Accept it").]]
 ]]]</tw-passagedata><tw-passagedata pid="18" name="Reject it" tags="" position="">[(text-style:"blur")[I'm sorry, my [mistake]&lt;mistake|.]
@@ -196,9 +196,9 @@ Who could want this(link: ",")[?
 	(else-if: $cy_emotion is 3)[the maggots squirm]
 }.
 
-(live:2s)[(stop:)(transition:"dissolve")[The world fades around you(link: ",")[.
+(live:2s)[(stop:)(transition:"dissolve")[The world fades around you(link: "--&gt;")[.
 
-Thank you(link: ",")[.
+Thank you(link: "--&gt;")[.
 
 ((link:"restart")[(reload:)]?(link: "}")[)
 
