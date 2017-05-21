@@ -1,0 +1,116 @@
+@media only screen {
+    body {
+        font-family: 'Lora', serif;
+        overflow:hidden;
+    }
+
+    main {
+        padding: 20% 5% 0em 5%;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align:center;
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    h1 {
+        font-size:2em;
+    }
+
+    a span {
+        -moz-transform: scale(2);
+        -o-transform: scale(2);
+        -ms-transform: scale(2);
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+
+    p {
+        font-size:1.25em;
+        text-align:center;
+    }
+
+    header {
+        position:absolute;
+        top:0px;
+        z-index:-1;
+        padding-right:1em;
+        padding-left:1em;
+        padding-top:1.75em;
+        height:5%;
+        width:100%;
+        background-position: bottom left, bottom left;
+        background-size:
+            1rem 1rem, 1rem 1rem,
+            1rem 1rem, 1rem 1rem;
+        background-repeat: repeat-x;
+    }
+
+    section {
+        margin:auto;
+        max-width:20em;
+        padding:3em 2em;
+        background-position: top left, top left, bottom left, bottom left;
+        background-size:
+            1rem 1rem, 1rem 1rem,
+            1rem 1rem, 1rem 1rem;
+        background-repeat: repeat-x;
+    }
+
+    footer {
+        position:absolute;
+        bottom:0px;
+        z-index:-1;
+        padding-right:1em;
+        padding-left:1em;
+        padding-top:1.75em;
+        height:4em;
+        width:100%;
+        background-position: top center, top center;
+        background-size: 1rem 1rem, 1rem 1rem;
+        background-repeat: repeat-x;
+    }
+
+    .left {
+        float:left;
+        text-align:left;
+    }
+
+    .right {
+        float:right;
+        text-align:right;
+    }
+}
+
+@media only screen and (min-width: 40em) {
+    main {
+        padding: 15% 5% 0em 5%;
+    }
+
+    h1 {
+        font-size:3em;
+    }
+    p {
+        font-size:1.5em;
+    }
+    section {
+        max-width:25em;
+        padding:3em;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    main {
+        padding: 10% 5% 0em 5% ;
+    }
+
+    h1 {
+        font-size:4em;
+    }
+    p {
+        font-size:1.75em;
+    }
+    section {
+        max-width:30em;
+    }
+}
