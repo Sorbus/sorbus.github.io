@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <title>UN THE SUN THE SUN THE SUN THE SUN TH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <style>
+      body {background-color:black;}
+      div.around {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+      }
+      h1 {color:white;font-size:10em;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </head>
+  <body>
+    <div class="around">
+      <h1 id="wordsa">enamored</h1>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    <script>
+      var words = ['insouciant', 'susurrous', 'irridescent', 'aurene', 'pearlescent', 'glimmer', 'glister', 'jargogle', 'deliciate', 'corrade', 'sanguinolency', 'widdendream', 'yemeles', 'illecebrous', 'chicane', 'fizgig', 'glaciate', 'glebe', 'gyve', 'overbrim', 'peregrinate', 'purfle', 'sanative', 'metamorphose', 'apricity', 'gorgonize', 'curglaff', 'lethophobia', 'sweven', 'septentional', 'welkin', 'fluctuant', 'inocciduous', 'nubivagant', 'odynometer', 'pamphagous', 'redamancy', 'scathefire', 'welmish', 'kickshaw', 'leman', 'lagniappe', 'zugzwang', 'babblement', 'illaqueation', 'nuncupatory', 'vernate', 'bunbury', 'scurrilous', 'gallimaufry', 'pluviophile', 'librocubularist', 'febricula', 'starrify', 'sophronize', 'mullock', 'pannychis', 'doggo', 'dormedory', 'propitiatory', 'expiation', 'ephemera', 'aurelent', 'lachrymose', 'optative', 'saccharine', 'quietude', 'volup', 'famelicose', 'xylophilia', 'longanimity', 'lethiferous', 'burke', 'atelier', 'verity', 'pluvial', 'pelgaic', 'demonifuge', 'noegenesis', 'otiant', 'rupestrine', 'dendropsyche', 'plenilune', 'asservate', 'gregal', 'fulminate', 'agapesis', 'anagapesis', 'temerity', 'crudelis', 'lysis', 'whigmaleerie', 'coadunation', 'supercrescent', 'anabiosis', 'perculsion', 'limnophilous', 'inaniloquent', 'fubsy', 'cultrate', 'wayment', 'craquelure', 'fulmineous', 'festinate', 'perfusus', 'extravasate', 'mavourneen', 'viand', 'enantiodromia', 'infandous', 'montivagant', 'noegenesis', 'scripturient', 'ultracrepidarian', 'vernalagnia', 'seneucia', 'fungiferous', 'arboriculous', 'effervescent', 'efflorescence', 'ossify', 'dormition', 'chronolatry', 'racine', 'tatterdemalion', 'ataraxia', 'apperception', 'ailurine', 'cervicorn', 'nepenthe', 'heliacal', 'diluculum', 'tacturiency', 'effrenate', 'specular', 'inflorescence', 'burgeon', 'ferine', 'contumacious', 'xerophyte', 'quinquennium', 'pleiades', 'thanatoid', 'virago', 'asperous', 'ailurine', 'astrogenous', 'leggiero', 'redolent', 'nefelibata', 'enamored' ]
+      document.getElementById("words").innerHTML = words[Math.floor(Math.random() * words.length)];
+      window.setInterval(function(){
+        document.getElementById("words").innerHTML = words[Math.floor(Math.random() * words.length)];
+      }, 5000);
+    </script>
+  </body>
+</html>
